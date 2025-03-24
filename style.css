@@ -50,7 +50,8 @@ nav {
 }
 
 nav {
-    background-color: aliceblue;
+    background-color: white;
+    box-shadow: 10px;
 }
 
 nav a,
@@ -79,4 +80,13 @@ nav button {
     padding: 5px;
 }
 
+#home, .dropbtn{
+    margin-top: 30px;
+}
+
+
 /* Slutt Navbar */
+
+.logo {
+    height: 100px;
+}
