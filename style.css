@@ -63,10 +63,10 @@ nav button {
     background-color: inherit;
     color: darkblue;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 35px;
     padding: 20px;
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Big Shoulders Inline;
 }
 
 .dropdown-content {
@@ -96,6 +96,19 @@ nav button {
 }
 
 
+/* Main */
+main {
+    display: flex;
+}
+.containerGrid {
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
+    width: 800px;
+}
 
 
 /* Footer */
@@ -131,3 +144,5 @@ footer p {
 
 
 /* Slutt Footer*/
+
+
