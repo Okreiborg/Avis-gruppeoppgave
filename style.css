@@ -99,6 +99,7 @@ nav button {
 /* Main */
 main {
     display: flex;
+    justify-content: center;
 }
 .containerGrid {
     align-items: center;
