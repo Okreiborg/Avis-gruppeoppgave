@@ -5,6 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analytiker: EU må slå tilbake mot tekgigantene</title>
     <style>
+        /* vår "minimal css reset" */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    /* Bra å alltid ha med denne regelen også */
+    width: 100%;
+}
+
+/* Slutt på vår "minimal css reset" */
+
+
+* {
+    /* vår "minimal css reset" */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    /* Bra å alltid ha med denne regelen også */
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* Vår navbar har position fixed. Da må vi ha litt 
+       margin på toppen for å ikke bli liggende "bak" den */
+    margin-top: 100px;
+    min-height: 100vh;
+
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* Vi bruker position fixed for at navbar alltid skal synes i toppen */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* Pass på at navbaren ligger "over" annet innhold med z-index */
+    z-index: 1;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 10px;
+}
+
+nav a,
+nav button {
+    background-color: inherit;
+    color: darkblue;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.dropdown-content a {
+    font-size: 18px;
+    padding: 5px;
+}
+
+#home, .dropbtn{
+    margin-top: 30px;
+}
+
+
+/* Slutt Navbar */
+
+.logo {
+    height: 100px;
+}
+
+
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  height: 65vh;
+  justify-content: space-around;
+  padding-top: 100px;
+  background-color: rgb(17, 17, 75);
+  color: white;
+}
+
+footer h1 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+footer p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+#footerTrykkHer {
+  text-decoration: underline;
+  color: rgb(248, 240, 96);
+}
+#footerTrykkHer:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Slutt Footer*/
+
+/*artikkel 1 css*/
+article{
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+img{
+    position: relative;
+    object-fit: cover;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+h1{
+    font-size: 80px;
+    line-height: 130%;
+}
+h2{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 140%;
+}
+.tekst{
+    width: 65%;
+}
 
     </style>
 </head>
@@ -13,9 +179,71 @@
 
     </nav>
     <main>
-        <img>
+        <img src="https://images.gfx.no/2000x/2752/2752649/NTB_Tb5Gwt_4-Y8.jpg">
         <article>
-            
+            <div class="overskrift">
+                <h1>Analytiker: EU må slå tilbake mot tekgigantene</h1>
+                <h2>Med Donald Trump i ryggen har tekmilliardærene Elon Musk og Mark Zuckerberg startet en ren informasjonskrig mot EU, mener analytiker.</h2>
+            </div>
+            <div class="tekst">
+                <p>EU må reagere og slå langt kraftigere tilbake, sier Georg Riekeles, som er nestleder i tankesmia European Policy Centre (EPC) i Brussel, til NTB.</p>
+
+                    <p>– Musk har startet en informasjonskrig som handler om å bryte ned europeiske demokratier, slår han fast.</p>
+                    
+                    <p>– Han bygger opp løgner og konspirasjoner og sprer dem til millioner av følgere. I mine øyne er det en bevæpning av sosiale medier. Og det nye er at det ikke lenger er Russland eller andre autoritære regimer som gjør slike ting. Det er Musk. En amerikansk statsborger og verdens rikeste mann, en person som er på vei mot en fremtredende rolle i den amerikanske administrasjonen.</p>
+                    
+                    <p>– Dette fordrer en sterkere respons fra europeisk side. Vi er akkurat nå i et sannhetens øyeblikk: Er vårt regelverk, vår lovgivningsevne og vår evne til å forsvare demokratiet reelle eller ikke? spør Riekeles.</p>
+
+                    <h3>Strammer seg til</h3>
+                    <p>Det er bare fire dager til Donald Trump inntar Det hvite hus. Men allerede før innsettelsen har kampen strammet seg til mellom EU og Elon Musks X og Mark Zuckerbergs Meta.
+                        
+                        Begge har posisjonert seg nær Trump i håp om støtte mot EU og unionens nye lover på techområdet – Digital Markeds Act (DMA) og Digital Services Act (DSA).
+                        
+                        Sistnevnte vil gjelde for alle plattformer fra 17. februar. Brudd på disse kan bety bøter i milliardklassen for techgigantene, opptil 6 prosent av omsetningen.
+                        
+                        EU har allerede gitt Meta en bot på 1,2 milliarder euro, drøyt 14 milliarder kroner, for brudd på personvernreglene, noe Zuckerberg ikke har tatt lett på. Blant annet har han kommet med beskyldninger om at EUs nye lover er ren sensur.
+                        
+                        I forrige uke ba Zuckerberg Trump om å komme plattformene til unnsetning mot EU-sanksjoner.
+                        
+                        Avtroppende president Joe Biden advarte på sin side om et nytt «oligarki» i sin avskjedstale onsdag.
+                        </p>
+                    <h3>Haglet med innlegg</h3>
+                    <p>De siste ukene har det haglet med innlegg fra Musk på meldingstjenesten X som er i grenseland for DSA, som blant annet pålegger plattformene å sikre at de ikke sprer desinformasjon.
+
+                        Blant annet har Musk blandet seg inn i europeisk politikk, blant annet med harde angrep på Storbritannias statsminister Keir Starmer og utilslørt støtte til ytre høyre-partier som AfD i Tyskland, ifølge Guardian som har laget en liste.
+                        Som NTB tidligere har omtalt, har Musk heller ikke holdt seg for god til å spre en falsk nyhet om statsminister Jonas Gahr Støre (Ap).
+
+                        EU-kommisjonens talspersoner har prøvd å berolige pressefolk i Brussel med å slå fast at EUs lovgivning skal følges, uansett hvem det gjelder.</p>
+
+                    <h3>Kommisjonen nøler</h3>
+                    <p>Sist helg postet EUs kommissær for det digitale området, finske Henna Virkkunen, denne meldingen på X:
+                        – Sosiale medier spiller en stor rolle i folks dagligliv, men de er også enormt viktige sosialt og økonomisk og påvirkningsmessig. Vår jobb er å sikre at rettighetene til Europas innbyggere blir respektert og at våre lover blir fulgt.
+
+                        Likevel har det festet seg et inntrykk av at kommisjonen nøler med å komme med en reaksjon mot X. I stedet har kommisjonen vist til en pågående gransking – som ble igangsatt for over ett år siden.
+
+                        Håndteringen av Musk og andre techgiganter var tema da Virkkunen ble grillet av en komité i EU-parlamentet onsdag kveld. Kommisjonen må være mer aktiv og mindre tafatt i håndteringen av big tech, var blant kravene.
+                    </p>
+                    <h3>– Kan ikke fortsette</h3>
+                    <p>Situasjonen er bekymringsfull, mener Riekeles.
+
+                        – Musk respekterer ikke DSA. Han har gjort X til en plattform for massemanipulasjon. Og det virker som om vi ikke har noe å si om det i det hele tatt. Det kan ikke fortsette slik, for det kommer bare til å bli vanskeligere, sier han.
+                        – EU burde vært raskere og modigere og tydeligere i implementeringen av DSA, slår han fast.
+
+                        Flere tror at EUs tilbakeholdenhet kan skyldes frykt for hvordan Trump vil reagere. Tidligere denne uka erkjente to EU-diplomater overfor Financial Times at situasjonen er kinkig – for å si det mildt.
+                        
+                        – Det kommer til å endre spillereglene helt når disse techoligarkene er så tett på Trump og bruker det til å presse oss. Så mye er i lufta akkurat nå, sier en av dem.</p>
+
+                    <h3>Reviderer saker</h3>
+                    <p>Ifølge diplomatene er EU-kommisjonen nå i gang med å revidere alle pågående saker rundt DSA-loven.
+
+                        – Musk vet dette. Og når han kjører så hardt, handler det om å prøve å tvinge EU og Europa i kne og si «Du kan ikke regulere meg», sier Riekeles.
+                        
+                        Også det danske EU-parlamentsmedlemmet Christel Schaldemose mener kommisjonen handler for langsomt.
+                        
+                        – Det nytter jo ikke dersom det tar opp til år å undersøke om en plattform har brutt reglene opp mot det tyske valget, når valget er om en måned, sier hun til den danske avisa Politiken.</p>
+                        
+            </div>
+
         </article>
     </main>
 </body>
