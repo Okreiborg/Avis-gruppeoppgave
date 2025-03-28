@@ -22,6 +22,12 @@
     flex-direction: column;
     z-index: -3;
 }
+.artikkel1 main img{
+    position: relative;
+    object-fit: cover;
+    z-index: -2;
+    height: 500px;
+}
 .artikkel1 article{
     background-color: white;
     width: 80%;
@@ -34,11 +40,8 @@
     margin-top: -180px;
     margin-bottom: 100px;
 }
-.artikkel1 main img{
-    position: relative;
-    object-fit: cover;
-    z-index: -2;
-    height: 500px;
+.artikkel1 img{
+    user-select: none;
 }
 .artikkel1 body{
     display: flex;
@@ -81,7 +84,7 @@
     flex-direction: column;
     gap: 50px;
     letter-spacing: .5px;
-    font-size: 15px;
+    font-size: 18px;
 }
 .artikkel1 .paragraf1 span{
     font-size: 100px;
@@ -101,7 +104,7 @@
     color: rgb(108, 107, 107);
     letter-spacing: normal;
 }
-.lesogsaa{
+.artikkel1 .lesogsaa{
     display: flex;
     width: 100%;
     box-shadow: 0px 5px 15px #e6e3e3;
@@ -109,48 +112,49 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    user-select: none;
 }
-.lesogsaa div{
+.artikkel1 .lesogsaa div{
     display: flex;
     gap: 10px;
 }
-.lesogsaa div div{
+.artikkel1 .lesogsaa div div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0;
 }
-.lesogsaa img{
+.artikkel1 .lesogsaa img{
     width: 200px !important;
     height: 100px !important;
 }
-.lesogsaa div div h1, .lesogsaa div div h2{
+.artikkel1 .lesogsaa div div h1, .lesogsaa div div h2{
     font-size: 20px;
     color: black;
     font-weight: 900;
     letter-spacing: 0;
 }
-.lesogsaa div div h2{
+.artikkel1 .lesogsaa div div h2{
     font-size: 15px;
 }
-.fa-arrow-right{
+.artikkel1 .fa-arrow-right{
     font-size: 30px;
 }
-.info{
+.artikkel1 .info{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-size: 15px;
 }
-.info p{
+.artikkel1 .info p{
     font-weight: 900;
 }
-.dato{
+.artikkel1 .dato{
     display: flex;
     gap: 10px;
 }
-.dato p{
+.artikkel1 .dato p{
     font-weight: 200;
 }
 /* Footer */
@@ -192,7 +196,7 @@
 <body>
     <header>
         <nav>
-            <a id="home" href="#home">Home</a>
+            <a id="home" href="../index.html">Home</a>
             <a href="#news"> 
                 <img src="../images/logo.png" alt="" class="logo">
             </a>
