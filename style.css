@@ -34,7 +34,7 @@ body {
     /* Vår navbar har position fixed. Da må vi ha litt 
        margin på toppen for å ikke bli liggende "bak" den */
     margin-top: 100px;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 
@@ -109,17 +109,29 @@ nav button {
 main {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
+    background-color: white;
 }
 .containerGrid {
     align-items: center;
     margin-top: 30px;
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 32px;
-    width: 800px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 400px 400px 400px;
+    gap: 1em;
+    grid-template-areas: 
+    "box-1 box-1 box-2"
+    "box-1 box-1 box-2"
+    "box-3 box-4 box-2"
+    "box-5 box-6 box-6";
+    
+}
+
+article {
+    font-size: 30px;
+    
 }
 
 
