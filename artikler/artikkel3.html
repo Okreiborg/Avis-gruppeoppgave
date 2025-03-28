@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kan teknologi destabilisere samfunn?</title>
+
     <style>
         /* vår "minimal css reset" */
 * {
@@ -41,7 +42,7 @@ body {
     /* Vår navbar har position fixed. Da må vi ha litt 
        margin på toppen for å ikke bli liggende "bak" den */
     margin-top: 100px;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     flex-direction: column;
 
@@ -63,6 +64,7 @@ nav {
 nav {
     background-color: white;
     border-bottom: 2px darkblue;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav a,
@@ -80,15 +82,23 @@ nav button {
     display: none;
     flex-direction: column;
     position: absolute;
-    background-color: antiquewhite;
-    padding: 20px;
-    margin-left: 20px;
-    margin-top: -10px;
+    background-color: white;
+    padding: 15px;
+    margin-top: 0px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
 }
 
 .dropdown-content a {
-    font-size: 18px;
-    padding: 5px;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0;
 }
 
 #home, .dropbtn{
@@ -133,15 +143,12 @@ footer p {
   color: blue;
 }
 
-
 /* Slutt Footer*/
-
-
-/* artikkel 2 paragraf*/
 
 
 
     </style>
+
 </head>
 <body>
     <header>
@@ -149,7 +156,7 @@ footer p {
         <nav>
             <a id="home" href="#home">Home</a>
             <a href="#news"> 
-                <img src="../images/logo.png" alt="" class="logo">
+                <img src="images/logo.png" alt="" class="logo">
             </a>
             <div class="dropdown">
                 <button class="dropbtn" onclick="klikk()">Dropdown
@@ -165,18 +172,32 @@ footer p {
 
     </header>
 
+
     <main>
+       <div id="art3_overskrift">
+            <h1>Kan teknologi destabilisere samfunn?</h1>
+            <h2>Europeiske velgere peker på globalisering som hovedårsak til mer sosial uro og 
+                økt politisk polarisering, men kanskje teknologi betyr enda mer?</h2>
+            <img src="images/destabilisereSamf.img">
+       </div>
 
-        <article>
+       <div class="art3_innhold">
+            <h3>SVIMLENDE PERSPEKTIVER: – Hva skjer i samfunn hvor teknologi og kunstig intelligens <br> 
+                utfordrer selve det å arbeide og behovet for antall arbeidstagere, spør kronikkforfatteren. <br>
+                Foto: ROBYN BECK / AFP / NTB</h3>
+            <h4>Lørdag 25. mars 2023 kl. 10:04</h4>
+       </div>
 
-            <div class="overskrift">
-                <h1>InnoEX/EFSE 2025: Fremtidens teknologi i Hongkong</h1>
-            </div>
-           
+         
 
-        </article>
+
+    
+       
+
 
     </main>
+
+
 
     <footer>
         <div>
@@ -217,6 +238,10 @@ footer p {
         </div>
 
     </footer>
+
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
