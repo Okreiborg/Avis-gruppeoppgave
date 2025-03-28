@@ -108,17 +108,16 @@ nav button {
 /* Main */
 main {
     display: flex;
+    align-items: center;
     justify-content: center;
     min-height: 100vh;
     text-align: center;
-    background-color: white;
+    background-color: aliceblue;
 }
 .containerGrid {
     align-items: center;
-    margin-top: 30px;
-    position: relative;
     display: grid;
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 400px 400px 400px;
     grid-template-rows: 400px 400px 400px;
     gap: 1em;
     grid-template-areas: 
@@ -126,11 +125,18 @@ main {
     "box-1 box-1 box-2"
     "box-3 box-4 box-2"
     "box-5 box-6 box-6";
+    width: 1200px;
+    background-color: white;
+    margin: 0px auto;
+    
     
 }
 
 article {
     font-size: 30px;
+    margin: 30px auto;
+    padding: 20px;
+    margin-top: -15px;
     
 }
 
