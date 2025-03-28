@@ -1,6 +1,6 @@
 /* Navbar */
 
-function showDropdownContent() {
+function klikk() {
     const dropDownContent = document.querySelector(".dropdown-content")
     if (dropDownContent.style.display == "flex" ) {
         dropDownContent.style.display = "none"
