@@ -125,7 +125,7 @@ main {
     "box-1 box-1 box-2"
     "box-3 box-4 box-2"
     "box-5 box-6 box-6";
-    width: 1200px;
+    width: 1300px;
     background-color: white;
     margin: 0px auto;
     
@@ -135,6 +135,7 @@ main {
 article {
     font-size: 30px;
     padding: 20px;
+    box-shadow: 10px 10px 10px lightgray;
     
 }
 
