@@ -17,6 +17,7 @@
     left: 0;
 }
 .artikkel1 main{
+    padding: 50px 50px 0 50px;
     background-color: white;
     text-align: left;
     flex-direction: column;
@@ -39,6 +40,7 @@
     margin: auto;
     margin-top: -180px;
     margin-bottom: 100px;
+    box-shadow: none;
 }
 .artikkel1 img{
     user-select: none;
@@ -46,7 +48,6 @@
 .artikkel1 body{
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 0 50px;
     align-items: center;
 }
 .artikkel1 h1{
@@ -79,7 +80,7 @@
 .artikkel1 .tekst{
     width: 80%;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 25px;
+    line-height: 32px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -111,7 +112,7 @@
     padding: 0 30px 0 0;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
+    cursor: pointer !important;
     user-select: none;
 }
 .artikkel1 .lesogsaa div{
@@ -167,7 +168,7 @@
   padding: 100px 0 450px 0;
   background-color: rgb(17, 17, 75);
   color: white;
-  width: calc(100% + 100px);
+  width: 100%;
 }
 
 .artikkel1 footer h1 {
@@ -190,6 +191,51 @@
 }
 
 /* Slutt Footer*/
+
+@media (max-width: 1080px){
+    .artikkel1 h1{
+        font-size: 45px;
+    }
+    .artikkel1 article{
+        width: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+        gap: 70px;
+    }
+
+}
+@media (max-width: 666px){
+    .artikkel1 h1{
+        font-size: 30px;
+    }
+    .artikkel1 article{
+        width: 80%;
+        margin-top: 0;
+        padding: 30px 0 0 0;
+        gap: 50px;
+    }
+    .artikkel1 .tekst{
+        width: 90%;
+    }
+
+    .artikkel1 footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .artikkel1 main{
+        padding: 50px 0 0 0;
+    }
+    .artikkel1 main img{
+        height: 50%;
+    }
+    .artikkel1 .lesogsaa img{
+        width: 100% !important;
+    }
+    .artikkel1 .lesogsaa div div h1{
+        font-size: 15px;
+    }
+}
+
 
     </style>
 </head>
@@ -221,7 +267,7 @@
                 <h2>Med Donald Trump i ryggen har tekmilliardærene Elon Musk og Mark Zuckerberg startet en ren informasjonskrig mot EU, mener analytiker.</h2>
             </div>
             <div class="info">
-                <p>Forfatter</p>
+                <p>Margrethe Koller</p>
                 <div class="dato">
                     <i class="fa-regular fa-clock"></i>
                     <p>Publisert: 16. jan. 2025 - 08.08</p>
