@@ -17,6 +17,7 @@
     left: 0;
 }
 .artikkel1 main{
+    padding: 50px 50px 0 50px;
     background-color: white;
     text-align: left;
     flex-direction: column;
@@ -46,7 +47,6 @@
 .artikkel1 body{
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 0 50px;
     align-items: center;
 }
 .artikkel1 h1{
@@ -113,8 +113,6 @@
     justify-content: space-between;
     cursor: pointer !important;
     user-select: none;
-    position: relative;
-    z-index: 10;
 }
 .artikkel1 .lesogsaa div{
     display: flex;
@@ -169,7 +167,7 @@
   padding: 100px 0 450px 0;
   background-color: rgb(17, 17, 75);
   color: white;
-  width: calc(100% + 100px);
+  width: 100%;
 }
 
 .artikkel1 footer h1 {
@@ -192,6 +190,43 @@
 }
 
 /* Slutt Footer*/
+
+@media (max-width: 1080px){
+    .artikkel1 h1{
+        font-size: 45px;
+    }
+    .artikkel1 article{
+        width: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+@media (max-width: 666px){
+    .artikkel1 h1{
+        font-size: 30px;
+    }
+    .artikkel1 article{
+        width: 80%;
+        margin-top: 0;
+        padding: 30px 0 0 0;
+    }
+    .artikkel1 .tekst{
+        width: 90%;
+    }
+
+    .artikkel1 footer {
+        flex-direction: column;
+        height: auto;
+    }
+    .artikkel1 main{
+        padding: 50px 0 0 0;
+    }
+    .artikkel1 main img{
+        height: 50%;
+    }
+}
+
 
     </style>
 </head>
