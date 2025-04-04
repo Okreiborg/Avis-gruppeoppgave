@@ -9,20 +9,6 @@
 
     <script src="https://kit.fontawesome.com/f6aa59a7b7.js" crossorigin="anonymous"></script>
     <style>
-        /* vår "minimal css reset" */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    /* Bra å alltid ha med denne regelen også */
-    width: 100%;
-}
-
-/* Slutt på vår "minimal css reset" */
-
 
 * {
     /* vår "minimal css reset" */
@@ -227,16 +213,15 @@ nav button {
 }
 
 .artikkel1 .tekst img {
-    width: auto;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-}
+            width: 100%;
+            z-index: 2;
+            height: 100%;
+        }
 
-.bilde p{
-    color: rgb(108, 107, 107);
-    letter-spacing: normal;
-}
+.artikkel1 .bilde p {
+            color: rgb(108, 107, 107);
+            letter-spacing: normal;
+        }
 .lesogsaa{
     display: flex;
     width: 100%;
