@@ -144,31 +144,59 @@
         justify-content: center;
         margin-top: 180px;
         font-family: sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        
     }
     .overskrift {
         margin-bottom: -75px;
-        font-size: 1.75rem;
+        font-size: 2rem;
     }
 
     article {
         background-color: white;
-        width: 80%;
         gap: 100px;
-        padding: 50px 150px 0 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         margin: auto;
-        margin-top: -180px;
+        margin-top: -130px;
         margin-bottom: 100px;
+        max-width: 1000px;
     }
 
-    .bilde p {
+    .bilde {
+        padding: 0px 0px 0px 16px;
+    }
+    .bilde p,.bilde2 p {
         color: rgb(108, 107, 107);
         letter-spacing: normal;
         font-size: 0.8rem;
     }
 
+    .paragraf {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul {
+        margin-left: 20px;
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+        color: rgb(74, 73, 73);
+    }
+    li {
+        margin-bottom: 1rem;
+    }
+
+    .tekst {
+        width: 700px;
+        margin: auto;
+    }
+    .paragraf2 {
+        width: 1000px;
+        
+    }
 
     </style>
 </head>
@@ -195,36 +223,34 @@
     </header>
 
 
-    <main>
-        <article>
+    <main>   
+        <article> 
             <div class="overskrift">
                 <h1>InnoEX/EFSE 2025: Fremtidens teknologi i Hongkong</h1>
             </div>
-
+                
                 <div class="bilde">
-                <img src="https://images.gfx.no/2000x/2877/2877491/Image%2520replacement.jpg" alt="">
-                <p>To messer under samme tak: Hongkong har lenge vært en ledende destinasjon for teknologi og innovasjon. Foto: HKTDC</p>
+                    <img src="https://images.gfx.no/2000x/2877/2877491/Image%2520replacement.jpg" alt="">
+                    <p>To messer under samme tak: Hongkong har lenge vært en ledende destinasjon for teknologi og innovasjon. Foto: HKTDC</p>
                 </div>
 
                 <div class="tekst">
-                    <div class="paragraf">
                         <p>Når InnoEX og Hong Kong Electronics Fair (EFSE) åpner dørene 13.–16. april 2025, blir Hongkong en møteplass for teknologiselskaper fra hele verden.</p>
 
-                        <p>De to messene samlet i fjor mer enn 88 000 besøkende fra 139 land.</p>
+                        <p><b>De to messene samlet i fjor mer enn 88 000 besøkende fra 139 land.</b></p>
 
                         <p>Årets arrangement fokuserer spesielt på løsninger innen KI, lavhøydeøkonomi, robotikk, cybersikkerhet, techdrevet økonomi, smarthjemløsninger og helseteknologi.</p>
 
-                    </div>
 
 
                     <div class="paragraf">
                         <p>Mens InnoEX retter seg mot avanserte teknologiløsninger, smart byutvikling og digital infrastruktur, fokuserer EFSE primært på elektronikkindustrien, med produkter og innovasjoner innen forbrukerteknologi, smarte hjem og wearables.</p>
                         
                         <div class="bilde">
-                        <img src="https://images.gfx.no/1400x/2877/2877325/Exhibition%2520showcase%25204.jpg" alt="">
-                        <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            <img src="https://images.gfx.no/1400x/2877/2877325/Exhibition%2520showcase%25204.jpg" alt="">
+                            <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
                         </div>
-
+                    </div>
 
                         <h2>Tematiske soner</h2>
 
@@ -233,20 +259,20 @@
                         <p>Blant høydepunktene:</p>
 
                         <ul>
-                            <li>Tech Hall, med elektrisk mobilitet, IoT, robotikk, e-helse og VR.</li>
-                            <li>Startup Zone, med investormøter, produktdemonstrasjoner og pitching-konkurranser.</li>
-                            <li>Hall of Fame, med premium elektronikk fra anerkjente globale merkevarer.</li>
+                            <li><b>Tech Hall,</b> med elektrisk mobilitet, IoT, robotikk, e-helse og VR.</li>
+                            <li><b>Startup Zone</b>, med investormøter, produktdemonstrasjoner og pitching-konkurranser.</li>
+                            <li><b>Hall of Fame,</b> med premium elektronikk fra anerkjente globale merkevarer.</li>
                         </ul>
 
-                        <div class="bilde">
+                        
+                    <div class="paragraf2">
+                        <div class="bilde2">
                             <img src="https://images.gfx.no/2000x/2877/2877379/HKTDC_1.jpg" alt="">
                             <p>Messen foregår på Hong Kong Convention and Exhibition Centre. Foto:  HKTDC</p>
                         </div>
-                        
-                        
-
-                    </div>                
-                    <div class="paragraf">
+                    </div>
+        
+        
                         <h2>Stiller med smarte etiketter</h2>
 
                         <p>På messen vises teknologi både som fremtidsrettede konsepter og konkrete, nye løsninger rettet mot bedrifter og enkeltpersoner.</p>
@@ -255,12 +281,13 @@
 
                         <p>MinewTags elektroniske hylleetiketter (ESL) bruker avansert E-ink-teknologi for å oppdatere prisinformasjon og produktdetaljer trådløst og i sanntid. </p>
 
+                        <div class="paragraf">
+                            <p>Teknologien hjelper butikker med dynamisk prissetting og reduserer behovet for manuell håndtering av papiretiketter. ESL-ene kan også vise interaktive elementer som QR-koder, som gir kundene rask tilgang til detaljert produktinformasjon og netthandel.</p>
 
-                        <p>Teknologien hjelper butikker med dynamisk prissetting og reduserer behovet for manuell håndtering av papiretiketter. ESL-ene kan også vise interaktive elementer som QR-koder, som gir kundene rask tilgang til detaljert produktinformasjon og netthandel.</p>
-
-                        <div class="bilde">
-                            <img src="https://images.gfx.no/1400x/2877/2877334/Exhibition%2520showcase%25203.jpg" alt="">
-                            <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            <div class="bilde">
+                                <img src="https://images.gfx.no/1400x/2877/2877334/Exhibition%2520showcase%25203.jpg" alt="">
+                                <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            </div>
                         </div>
 
                         <p>– Våre elektroniske etiketter reduserer ikke bare arbeidstid og feilmarginer, men har også en betydelig miljøgevinst gjennom kraftig redusert papirforbruk, noe som støtter detaljhandelens bærekraftmål, sier en representant for selskapet.</p>
@@ -275,12 +302,13 @@
 
                         <p>Selskapet stiller blant annet ut TV-er, monitorer og interaktive skjermer (IFPD).</p>
 
-                        
-                        <p>– Våre produkter er etterspurt i både forbruker- og bedriftsmarkedet, og EFSE gir oss muligheten til å nå et bredt spekter av profesjonelle kjøpere og teknologientusiaster, sier HKC Corporation.</p>
+                        <div class="paragraf">
+                            <p>– Våre produkter er etterspurt i både forbruker- og bedriftsmarkedet, og EFSE gir oss muligheten til å nå et bredt spekter av profesjonelle kjøpere og teknologientusiaster, sier HKC Corporation.</p>
 
-                        <div class="bilde">
-                            <img src="https://images.gfx.no/NaNx/2877/2877540/LSW00809.jpg" alt="">
-                            <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            <div class="bilde">
+                                <img src="https://images.gfx.no/NaNx/2877/2877540/LSW00809.jpg" alt="">
+                                <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            </div>
                         </div>
 
                         <p>Selskapet trekker frem viktige trender innen skjermteknologi, inkludert MicroLED-skjermer, transparente LED-skjermer, fleksible skjermer og AI-drevet digital skilting.</p>
@@ -295,12 +323,13 @@
 
                         <p>Selskapets sortiment inkluderer LED-lysterapimasker, multifunksjonelle hårkammer med laserterapi og avanserte ansiktsbehandlingsenheter - produkter som gjør profesjonelle behandlinger tilgjengelige hjemme.</p>
 
+                        <div class="paragraf">
+                            <p>– I velværeindustrien handler det nå om å bringe profesjonell kvalitet hjem til brukerne på en enkel og intuitiv måte. Våre produkter er utstyrt med automatiserte og personlige funksjoner, slik at kundene kan tilpasse behandlingen etter egne behov uten tidkrevende besøk på skjønnhetssalonger, sier selskapet i en epost.</p>
 
-                        <p>– I velværeindustrien handler det nå om å bringe profesjonell kvalitet hjem til brukerne på en enkel og intuitiv måte. Våre produkter er utstyrt med automatiserte og personlige funksjoner, slik at kundene kan tilpasse behandlingen etter egne behov uten tidkrevende besøk på skjønnhetssalonger, sier selskapet i en epost.</p>
-
-                        <div class="bilde">
-                            <img src="https://images.gfx.no/NaNx/2877/2877337/Exhibition%2520showcase%25202.jpg" alt="">
-                        <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            <div class="bilde">
+                                <img src="https://images.gfx.no/NaNx/2877/2877337/Exhibition%2520showcase%25202.jpg" alt="">
+                                <p>Fra InnoEX 2024.  Foto:  HKTDC</p>
+                            </div>
                         </div>
 
                         <p>Et økende fokus på helse og velvære driver etterspørselen etter slike hjemmebaserte kvalitetsløsninger. TOUCHBeauty tilpasser seg denne trenden gjennom kontinuerlig produktutvikling og innovasjon.</p>
@@ -312,11 +341,9 @@
                         <p>Konferanser, workshops og nettverksarrangementer gir ytterligere anledning til å lære av internasjonale eksperter og utforske fremtidens teknologiske løsninger.</p>
 
                         <p>I år vil messen også tilby EXHIBITION+, en hybridplattform som kombinerer fysiske utstillinger med digitale nettverksmuligheter via KI-drevet forretningsmatching i «Click2Match». Dette gir deltakere større fleksibilitet til å knytte kontakter og følge opp samarbeid også etter messen.</p>
+   
+                </div>
 
-                        
-                    </div>
-
-            </div>
         </article>
     </main>
 
