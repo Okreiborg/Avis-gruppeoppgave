@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="artikkel1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rekordvekst for norsk nettleser</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+
+    <script src="https://kit.fontawesome.com/f6aa59a7b7.js" crossorigin="anonymous"></script>
+    <style>
+
+* {
+    /* vår "minimal css reset" */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    /* Bra å alltid ha med denne regelen også */
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* Vår navbar har position fixed. Da må vi ha litt 
+       margin på toppen for å ikke bli liggende "bak" den */
+    margin-top: 100px;
+    min-height: 100vh;
+
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* Vi bruker position fixed for at navbar alltid skal synes i toppen */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* Pass på at navbaren ligger "over" annet innhold med z-index */
+    z-index: 3;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 10px;
+}
+
+nav a,
+nav button {
+    background-color: inherit;
+    color: darkblue;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.dropdown-content a {
+    font-size: 18px;
+    padding: 5px;
+}
+
+#home, .dropbtn{
+    margin-top: 30px;
+}
+
+
+/* Slutt Navbar */
+
+.logo {
+    height: 100px;
+}
+
+
+
+
+/* Footer */
+
+.artikkel1 footer{
+  display: flex;
+  flex-direction: row;
+  height: 65vh;
+  justify-content: space-around;
+  padding: 100px 0 450px 0;
+  background-color: rgb(17, 17, 75);
+  color: white;
+  width: calc(100% + 100px);
+}
+
+.artikkel1 footer h1 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.artikkel1 footer p {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.artikkel1 #footerTrykkHer {
+  text-decoration: underline;
+  color: rgb(248, 240, 96);
+}
+.artikkel1 #footerTrykkHer:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+/* Slutt Footer*/
+
+/*artikkel 1 css*/
+.artikkel1 article{
+    background-color: white;
+    width: 80%;
+    gap: 100px;
+    padding: 50px 150px 0 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: -180px;
+    margin-bottom: 100px;
+}
+.artikkel1 main img{
+    position: relative;
+    object-fit: cover;
+    z-index: -2;
+    height: 500px;
+}
+.artikkel1 h1{
+    font-size: 60px;
+    line-height: 130%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    letter-spacing: -2px;
+
+}
+
+.artikkel1 .info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(90, 90, 90);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Endret fra center til flex-start */
+    gap: 5px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.artikkel1 .info .dato {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.artikkel1 h2{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 140%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(79, 79, 79);
+
+}
+.artikkel1 h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    letter-spacing: -.5px;
+    font-size: 20px;
+}
+.artikkel1 .overskrift{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.artikkel1 .tekst{
+    text-align: center;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    letter-spacing: .5px;
+}
+.artikkel1 .paragraf1 span{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    float: left;
+    line-height: .8;
+}
+
+.artikkel1 .tekst img {
+            width: 100%;
+            z-index: 2;
+            height: 100%;
+        }
+
+.artikkel1 .bilde p {
+            color: rgb(108, 107, 107);
+            letter-spacing: normal;
+        }
+.lesogsaa{
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 5px 15px #e6e3e3;
+    padding: 0 30px 0 0;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.lesogsaa div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.lesogsaa div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+.lesogsaa img{
+    width: 100px !important;
+    height: 100px !important;
+}
+.lesogsaa div div h1, .lesogsaa div div h2{
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 0;
+}
+.lesogsaa div div h2{
+    font-size: 15px;
+}
+.fa-arrow-right{
+    font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="home" href="#home">Home</a>
+            <a href="#news"> 
+                <img src="../images/logo.png" alt="" class="logo">
+            </a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="klikk()">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://shared.cdn.smp.schibsted.com/v2/images/83be5b5b-13c9-42d5-9666-446ab541c6a3?fit=crop&format=auto&h=2250&w=4000&s=df7ab25a9afcdf821c66bf0f1bbe7b21d30685ad">
+        <article>
+            <div class="overskrift">
+                <h1>Rekordvekst for norsk nettleser – får ny funksjon</h1>
+                <h2>Tydelig at folk er lei «Big Tech», sier sjefen</h2>
+            </div>
+                <div class="info">
+                    <p>Sebastian Bull-Valen</p>
+                    <div class="dato">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Publisert: 16. jan. 2025 - 08.08</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tekst">
+                    <div class="paragraf1">
+                        <p><span>D</span>en norske nettleseren Vivaldi opplever en vill vekst. Innen mars er over forventer selskapet bak at dobbelt så mange nordmenn surfer på internett med Vivaldi sammenlignet med utgangen av fjoråret.</p>
+
+                        
+                        <p>Også i resten av verden peker pilene opp, med snart 3,5 millioner månedlige brukere.</p>
+                        
+                        <p>– Vi kan fort se en enda raskere vekst, ettersom det er tydelig at folk er lei «Big Tech», sier Jon von Tetzchner til Tek.no.</p>
+                    </div>
+                    <div class="bilde">
+                        <img src="https://shared.cdn.smp.schibsted.com/v2/images/b886cba5-b0d2-4bcc-84cc-aa4aadafd4f0?fit=crop&format=auto&h=1422&w=800&s=7587f79c76a7c2b03cd9d3d7efdfefea07666bb0" alt="Vivaldi-sjef Jon von Tetzchner">
+                        <p>Vivaldi-sjef Jon von Tetzchner. Foto: Schibsted</p>
+                    </div>
+                    <div class="paragraf2">
+                        <h3>Eneste europeiske nettleser</h3>
+                        <p>Han er sjef i Vivaldi, og klar på hvorfor nettsurfere nå strømmer til:
+                            
+                            – Som den eneste «fullverdige» europeiske nettleseren ser vi at dette leder flere vår vei.
+                            
+                            Vi merker engasjement rundt alternativer til «Big Tech», spesielt fra Europa.
+                            
+                            Bakgrunnen er at de store amerikanske teknologiselskapene som Google, Microsoft, Amazon og Meta, den siste tiden har knyttet tettere bånd til Trump-administrasjonen og deres «Amerika først»-ideologi med favorisering av amerikanske selskaper og lite fokus på regulering.
+                            
+                            Nettlesere er verktøy som blant annet kan samle inn personlig informasjon om brukernes vaner, preferanser og aktivitet på nettet, skriver Vivaldi, som mener at nettbrukere har hatt få muligheter til å unngå dette.
+                            
+                            Frem til nå.
+                            </p>
+                    </div>
+                    <div class="lesogsaa" href="">
+                        <div>
+                            <img src="https://shared.cdn.smp.schibsted.com/v2/images/b886cba5-b0d2-4bcc-84cc-aa4aadafd4f0?fit=crop&format=auto&h=1422&w=800&s=7587f79c76a7c2b03cd9d3d7efdfefea07666bb0" alt="">
+                            <div>
+                                <h2>Les Også</h2>
+                                <h1>Overskrift</h1>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div class="paragraf3">
+                        <h3>Får gratis, sveitsisk VPN bygget inn</h3>
+                        <p>Som et svar på datainnsamlingen som skjer via amerikanske nettlesere som Googles Chrome eller Microsofts Edge, har de nå oppgradert Vivaldi med VPN fra Proton.
+
+                            Et VPN gjør det vanskelig for aktører å selge annonser basert på nettaktiviteten din, samt vite hvor du surfer fra. I tillegg krypteres dataen du sender og mottar så den ikke han overvåkes og misbrukes.
+                            Proton-VPN-et er gratis og kan slås på rett fra nettleseren. Vivaldi opplyser at det kommer uten trafikkbegrensning, men med mulighet for en oppgradert betalt versjon.
+    
+                            Proton VPN er laget av de samme som står bak den anerkjente krypterte e-posttjenesten Proton Mail. Selskapet driftes fra Sveits, og følger sveitsisk personvernlovgivning.
+                            – Sammen setter Proton VPN og Vivaldi en ny standard som utfordrer dominansen til teknologigigantene, og gir et levedyktig europeisk alternativ som hjelper folk å ta tilbake kontrollen over sine digitale liv, sier David Peterson, sjef i Proton VPN, i en pressemelding.</p>
+                    </div>
+
+                    <div class="paragraf4">
+                        <h3>-Et samfunnsproblem</h3>
+                        <p>Vivaldi-sjef von Tetzchner er bekymret for utviklingen på internett:
+    
+                            – Det store problemet er uhemmet innsamling av data fra Big Tech, som så brukes til å vise både skreddersydd reklame og innhold. Mye av den polariseringen vi ser i samfunnet i dag kan sies å være et resultat av disse løsningene, sier han til Cybersafe.
+    
+                            – Dette er et samfunnsproblem, og løsningen er regulering. Vi har lenge sagt at det er viktig å regulere bruk av data og vi mener egentlig at det burde være ulovlig for selskap å profilere brukerne.
+
+                            Vivaldi samler ikke inn brukerdata for å selge til annonsører, opplyser selskapet:
+
+                            – Ved Vivaldi er personvern standard, og alt er valgfritt. Vi profilerer deg ikke, og vi selger ikke dataene dine. Vi bygger programvare som fungerer for deg, ikke for annonsører – fordi privat og sikker surfing ikke bør være en luksus, det bør være standarden.
+                        </p>
+                    </div>
+                    <div class="lesogsaa" href="">
+                        <div>
+                            <img src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" alt="">
+                            <div>
+                                <h2>Les Også</h2>
+                                <h1>Overskrift</h1>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <div>
+            <h1>CSS ansvarlig:</h1>
+            <p>Oscar Kreiborg</p>
+
+            <h1>Nyhetsredaktør:</h1>
+            <p>Margrethe Koller <br> ???</p>
+
+            <h1>HTML redaktør:</h1>
+            <p>Iben Holter</p>
+
+            <h1>JS ansvarlig:</h1>
+            <p>???</p>
+        </div>
+
+        <div>
+            <h1>Tips og kommentarer:</h1>
+            <p>tips@kommentarer.no</p>
+
+            <h1>For abonnenter og <br> annonsører: </h1>
+            <p id="footerTrykkHer">Abonnement/adresseendring</p>
+            <p id="footerTrykkHer">Annonsere i Cybersafe</p>
+            <p id="footerTrykkHer">Cybersafe event</p>
+        </div>
+
+        <div>
+            <h1>Postadresse:</h1>
+            <p>Postboks 1 Nadderud <br> Bærum</p>
+
+            <h1>Besøksadresse:</h1>
+            <p>Gjønnesjordet 30 <br>1357 Bekkestua</p>
+        </div>
+
+        <div>
+            <h1>Nyhetsbrev:</h1>
+            <p>Meld deg på Cybersafes <br> daglige nyhetsbrev <br> <span id="footerTrykkHer">Trykk her</span> </p>
+        </div>
+
+    </footer>
+</body>
+</html>
