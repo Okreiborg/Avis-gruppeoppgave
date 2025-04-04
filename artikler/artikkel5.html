@@ -162,10 +162,12 @@ nav button {
     height: 500px;
 }
 .artikkel1 body{
-    display: flex;
-    flex-direction: column;
-    padding: 50px 50px 0 50px;
-    align-items: center;
+    .artikkel1 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    }
 }
 .artikkel1 h1{
     font-size: 60px;
@@ -232,7 +234,8 @@ nav button {
 }
 .lesogsaa div{
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 .lesogsaa div div{
     display: flex;
@@ -255,6 +258,15 @@ nav button {
 }
 .fa-arrow-right{
     font-size: 30px;
+}
+.artikkel1 article, 
+.artikkel1 .tekst,
+.artikkel1 .tekst > div,
+.artikkel1 .overskrift,
+.artikkel1 footer,
+.artikkel1 footer div {
+    text-align: center;
+    align-items: center;
 }
 
     </style>
@@ -286,7 +298,13 @@ nav button {
                 <h1>Rekordvekst for norsk nettleser – får ny funksjon</h1>
                 <h2>Tydelig at folk er lei «Big Tech», sier sjefen</h2>
             </div>
-            <div class="info">
+                <div class="info">
+                    <p>Sebastian Bull-Valen</p>
+                    <div class="dato">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Publisert: 16. jan. 2025 - 08.08</p>
+                    </div>
+                </div>
 
             </div>
             <div class="tekst">
@@ -338,10 +356,6 @@ nav button {
                             Proton VPN er laget av de samme som står bak den anerkjente krypterte e-posttjenesten Proton Mail. Selskapet driftes fra Sveits, og følger sveitsisk personvernlovgivning.
                             – Sammen setter Proton VPN og Vivaldi en ny standard som utfordrer dominansen til teknologigigantene, og gir et levedyktig europeisk alternativ som hjelper folk å ta tilbake kontrollen over sine digitale liv, sier David Peterson, sjef i Proton VPN, i en pressemelding.</p>
                     </div>
-                    <div class="bilde">
-                        <img src="https://images.gfx.no/1160x/2869/2869001/NTB_rLUDXeKwsl4.jpg" alt="">
-                        <p>Med Donald Trump i ryggel har Elon Musk gått til angrep mot både EU og flere europeiske politikere på sin egen plattform X. Foto:  Brandon Bell/AP/NTB</p>
-                    </div>
 
                     <div class="paragraf4">
                         <h3>-Et samfunnsproblem</h3>
@@ -365,7 +379,7 @@ nav button {
                             </div>
                         </div>
                         <i class="fa-solid fa-arrow-right"></i>
-                        
+
             </div>
 
         </article>
