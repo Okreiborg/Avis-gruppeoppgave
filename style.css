@@ -308,14 +308,14 @@ h3 {
 
 
 
-/* Så den passer forskjellige skjermstørrelser*/
+/* MEDIA: Så den passer forskjellige skjermstørrelser*/
 
 @media (max-width: 1120px) {
     h1 {
         font-size: 45px;
     }
 
-    article {
+    .artArticle {
         width: 90%;
         padding-left: 50px;
         padding-right: 50px;
@@ -340,7 +340,7 @@ h3 {
         font-size: 30px;
     }
 
-    article {
+    .artArticle {
         width: 80%;
         margin-top: 0;
         padding: 30px 0 0 0;
@@ -358,11 +358,11 @@ h3 {
         padding-bottom: 0;
     }
 
-    main {
+    .artMain {
         padding: 50px 0 0 0;
     }
 
-    main img {
+    .artMain img {
         height: 50%;
     }
 
@@ -378,21 +378,38 @@ h3 {
 }
 
 @media (max-width: 502px) {
-    .lesogsaa div div {
+    .lesogsaa div div h1{
+        font-size: 10px;
+    }
+
+    .lesogsaa div div h2{
+        font-size: 7px;
+    }
+    .artArticle{
+        margin: 0 0 100px 0;
+    }
+    .lesogsaa  div img{
+        width: 100%;
+    }
+    .lesogsaa{
+        overflow: hidden;
+        padding: 0 0 30px 0;   
+        justify-content: center;
+        width: 200px;
+       justify-self: center;
+    }
+    .lesogsaa div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lesogsaa i{
         display: none;
     }
-
-    .lesogsaa img {
-        width: 100% !important;
+    nav img{
+        display: none;
     }
-
-    .lesogsaa div {
-        width: 100% !important;
-    }
-
-    .lesogsaa {
-        width: 90%;
-        gap: 30px;
+    nav{
+        padding: 0 0 35px 0;
     }
 }
 
