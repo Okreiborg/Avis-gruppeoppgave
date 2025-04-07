@@ -211,14 +211,17 @@ h3 {
     font-size: 18px;
 }
 
-.paragraf1 span {
+.paragraf span {
     font-size: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     float: left;
     line-height: .8;
     margin: 0 20px 0 0;
+}
 
+.paragraf p {
+    margin-bottom: 20px;
 }
 
 .tekst img {
@@ -298,6 +301,57 @@ h3 {
 .dato p {
     font-weight: 200;
 }
+
+/* Slutt genrell artikkel css*/
+
+
+
+/* Kortversjon boks*/
+
+.sammendrag-boks {
+    max-width: 600px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #cfd7ee;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sammendrag-boks {
+    transition: max-height 0.5s ease;
+    overflow: hidden;
+}
+
+.sammendrag-punkter {
+    padding-left: 20px;
+    font-size: 15px;
+    font-family: Poppins;
+    color: rgb(49, 49, 49);
+}
+
+.sammendrag-punkter li {
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Poppins;
+}
+
+.knapp {
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 100%;
+    font-family: Big Shoulders Inline;
+}
+/* Slutt Kortversjon boks*/
 
 
 
@@ -405,6 +459,9 @@ h3 {
         padding: 0 0 35px 0;
     }
 }
+
+/* Slutt Media*/ 
+
 
 
 
