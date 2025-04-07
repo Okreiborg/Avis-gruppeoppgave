@@ -46,7 +46,6 @@
             margin-bottom: 100px;
             box-shadow: none;
             z-index: 3;
-            align-items: center;
         }
 
         .artikkel1 img {
@@ -171,8 +170,8 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            font-size: 15px;
             width: 100%;
+            font-size: 15px;
         }
 
         .artikkel1 .info p {
@@ -291,21 +290,38 @@
         }
 
         @media (max-width: 502px) {
-            .artikkel1 .lesogsaa div div {
+            .artikkel1 .lesogsaa div div h1{
+                font-size: 10px;
+            }
+
+            .artikkel1 .lesogsaa div div h2{
+                font-size: 7px;
+            }
+            .artikkel1 article{
+                margin: 0 0 100px 0;
+            }
+            .artikkel1 .lesogsaa  div img{
+                width: 100%;
+            }
+            .artikkel1 .lesogsaa{
+                overflow: hidden;
+                padding: 0 0 30px 0;   
+                justify-content: center;
+                width: 200px;
+               justify-self: center;
+            }
+            .artikkel1 .lesogsaa div{
+                flex-direction: column;
+                align-items: center;
+            }
+            .artikkel1 .lesogsaa i{
                 display: none;
             }
-
-            .artikkel1 .lesogsaa img {
-                width: 100% !important;
+            .artikkel1 nav img{
+                display: none;
             }
-
-            .artikkel1 .lesogsaa div {
-                width: 100% !important;
-            }
-
-            .artikkel1 .lesogsaa {
-                width: 90%;
-                gap: 30px;
+            .artikkel1 nav{
+                padding: 0 0 35px 0;
             }
         }
     </style>
@@ -389,7 +405,7 @@
                 <a href="artikkel3.html">
                     <div class="lesogsaa" href="">
                         <div>
-                            <img src="http://127.0.0.1:5500/images/destabilisereSamf.img" alt="">
+                            <img src="https://akamai.vgc.no/v2/images/f15264ca-0f17-4bec-b9a8-6a85eb2a89f5?format=auto&w=2160&s=bc4b203b4c6737ac780949df90ebb7c4079e024e" alt="">
                             <div>
                                 <h2>Les Også</h2>
                                 <h1>Kan teknologi destabilisere samfunn?</h1>
