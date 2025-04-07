@@ -170,13 +170,6 @@ article {
     align-items: center;
 }
 
-
-.artBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .artMain h1 {
     font-size: 60px;
     line-height: 130%;
