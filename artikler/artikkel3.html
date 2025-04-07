@@ -4,153 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kan teknologi destabilisere samfunn?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        /* vår "minimal css reset" */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-img {
-    /* Bra å alltid ha med denne regelen også */
-    width: 100%;
-}
-
-/* Slutt på vår "minimal css reset" */
-
-
-* {
-    /* vår "minimal css reset" */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-img {
-    /* Bra å alltid ha med denne regelen også */
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-body {
-    /* Vår navbar har position fixed. Da må vi ha litt 
-       margin på toppen for å ikke bli liggende "bak" den */
-    margin-top: 100px;
-    min-height: 100dvh;
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-around;
-    /* Vi bruker position fixed for at navbar alltid skal synes i toppen */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    /* Pass på at navbaren ligger "over" annet innhold med z-index */
-    z-index: 1;
-}
-
-nav {
-    background-color: white;
-    border-bottom: 2px darkblue;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-nav a,
-nav button {
-    background-color: inherit;
-    color: darkblue;
-    text-decoration: none;
-    font-size: 35px;
-    padding: 20px;
-    border: none;
-    font-family: Big Shoulders Inline;
-}
-
-.dropdown-content {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    background-color: white;
-    padding: 15px;
-    margin-top: 0px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    min-width: 200px;
-}
-
-.dropdown-content a {
-    font-size: 20px;
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #f0f0f0;
-}
-
-#home, .dropbtn{
-    margin-top: 30px;
-}
-
-
-/* Slutt Navbar */
-
-.logo {
-    height: 100px;
-}
-
-/* Footer */
-
-footer {
-  display: flex;
-  flex-direction: row;
-  height: 65vh;
-  justify-content: space-around;
-  padding-top: 100px;
-  background-color: rgb(17, 17, 75);
-  color: white;
-}
-
-footer h1 {
-  font-size: 20px;
-  padding-bottom: 5px;
-}
-
-footer p {
-  font-size: 20px;
-  margin-bottom: 50px;
-}
-
-#footerTrykkHer {
-  text-decoration: underline;
-  color: rgb(248, 240, 96);
-}
-#footerTrykkHer:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-/* Slutt Footer*/
-
-
+       
 
     </style>
 
 </head>
 <body>
+
     <header>
 
         <nav>
@@ -174,29 +41,149 @@ footer p {
 
 
     <main>
-       <div id="art3_overskrift">
-            <h1>Kan teknologi destabilisere samfunn?</h1>
-            <h2>Europeiske velgere peker på globalisering som hovedårsak til mer sosial uro og 
-                økt politisk polarisering, men kanskje teknologi betyr enda mer?</h2>
-            <img src="images/destabilisereSamf.img">
-       </div>
+        <img src=https://akamai.vgc.no/v2/images/f15264ca-0f17-4bec-b9a8-6a85eb2a89f5?format=auto&w=2160&s=bc4b203b4c6737ac780949df90ebb7c4079e024e>
+        <article>
+            <div id="overskrift">
+                <h1>Kan teknologi destabilisere samfunn?</h1>
+                <h2>Europeiske velgere peker på globalisering som hovedårsak til mer sosial uro og 
+                    økt politisk polarisering, men kanskje teknologi betyr enda mer?</h2> 
+           </div>
+           <div class="info">
+                <p>Iben Holter</p>
+                <div class="dato">
+                    <i class="fa-regular fa-clock"></i>
+                    <p>Publisert: 25. mars 2023 - 10.04</p>
+                </div>
+           </div>
+           <div class="tekst">
+                <div class="paragraf1">
+                    <p>TARJEI SKIRBEKK, idéhistoriker og forfatter av «De moderate folkepartienes fall i Europa»</p>
+                    <img src="https://akamai.vgc.no/v2/images/fd6a40e9-3f82-48cf-a693-13948e991aef?format=auto&w=480&s=d8253eef483ddee30dafaddf2a15b9cb8238aa52" alt="">
+                    <p>Bioteknologi, robotisering, kunstig intelligens (KI), virtuell virkelighet, nanoteknologi,
+                         sensor teknologi, algoritmer, mobildata, big-data, skyteknologi er teknologier som allerede endrer våre liv.
+                        </p>
+                    <p>De gir oss enorme muligheter, men sårbarheten vår øker og polariseringen kan blir enda større.
+                        </p>
+                    <p>De færreste av oss kan forestille et liv uten ny teknologi og digitalisering. Det åpner opp muligheter 
+                        til å tilegne seg kunnskap og til knytte bånd med andre, kommunisere og samarbeide. De bidrar også til 
+                        bedre produkter og tjenester til en billigere pris.
+                        </p>
+                    <p>Men i vår entusiasme for alt det nye, må vi ikke være naive i forhold til nedsider den teknologiske 
+                        utviklingen kan skape. Og vi må være realistiske for hvordan den geopolitiske situasjonen vil sette
+                         rammer og begrensninger for teknologi.
+                        </p>
+                    <p>Teknologi er i utgangspunktet verdifri og politisk nøytral, men hvordan teknologi brukes er ikke verdifri
+                        eller politisk nøytral.
+                        </p>
+                </div>
 
-       <div class="art3_innhold">
-            <h3>SVIMLENDE PERSPEKTIVER: – Hva skjer i samfunn hvor teknologi og kunstig intelligens <br> 
-                utfordrer selve det å arbeide og behovet for antall arbeidstagere, spør kronikkforfatteren. <br>
-                Foto: ROBYN BECK / AFP / NTB</h3>
-            <h4>Lørdag 25. mars 2023 kl. 10:04</h4>
-       </div>
+                <div class="bilde">
+                    <img src="https://akamai.vgc.no/v2/images/f2656947-8907-43a7-8888-cca66e9148ef?format=auto&w=2160&s=85499b1089ba404ca708a9d1d5a9afd50e38aab1" alt="">
+                    <p>LAG PÅ LAG: En besøkende tar et mobilfoto av et bilde designet med kunstig intelligens, av den tyske digitalkunstneren 
+                        Julian van Dieken. Bildet er igjen inspirert av Vermeers</p>
+                </div>
 
-         
+                <div class="paragraf2">
+                    <h3>Teknologi både ledes av og fører samfunnsutviklingen</h3>
+                    <p>Teknologiområder som bioteknologi, nanoteknologi, materialteknologi og informasjons- og kommunikasjonsteknologi 
+                        er alle generiske. Det vil si at de vil ha omfattende og langsiktig virkning innenfor en rekke samfunnsområder.
+                        </p>
+                    <p>Disse teknologiene er det vi kaller for konvergerende teknologier. Hver teknologi representerer store muligheter, 
+                        men de kan samtidig utløse vanskelige etiske dilemmaer, sosiale utfordringer og politiske problemer.
+                        </p>
+                    <p>Teknologi påvirker områder som har noe med våre levevilkår å gjøre, fordi vi mer eller mindre er underlagt
+                         forskjellige teknologiske systemer.
+                        </p>
+                    <p>Men den teknologiske utviklingen skjer ikke på egne premisser, men finner sted i en økonomisk, politisk,
+                         sikkerhetsmessig, sosial, kulturell og økologisk balanse. Dets konsekvenser kan derfor heller ikke forstås 
+                         uavhengig av disse betingelsene.
+                        </p>
+                    <p>Omvendt bidrar den teknologiske utviklingen selv til å forandre de samfunnsmessige forholdene.
+                        </p>
+                    <p>Teknikkens historie er historien om hvordan mennesket har utviklet råmaterialer til redskaper 
+                        – fra man tente den første gnist mellom to flintsteiner, til hjulet, klokken og kruttet og 
+                        boktrykkerkunsten, dampmaskiner og computere.
+                        </p>
+                    <p>Ifølge Karl Marx var teknologiske nyvinninger en av de sentrale årsakene til de historiske endringer.
+                         Og man trenger ikke å være en fanatisk tilhenger av historisk materialisme for å se at digitalisering 
+                         og teknologien har ført og fører til store omveltninger for både den enkelte og for samfunnet som helhet.
+                        </p>
+                </div>
 
+                <div class="bilde">
+                    <img src="https://akamai.vgc.no/v2/images/e0e924b1-ce81-458d-9ce3-2c30ba02b2a3?format=auto&w=2160&s=e61e9a2be526108dd065d3fc3e8920f349f625a5" alt="">
+                    <p>SNUR VERDEN OPP NED: – Ifølge OECD er hver sjette middelklassejobb i fare for å bli automatisert. Det kan 
+                        bli svært krevende politisk, skriver kronikkforfatteren. Foto: RODGER BOSCH / AFP / NTB</p>
+                </div>
 
-    
-       
+                <div class="paragraf3">
+                    <h3>Teknologi skaper økonomisk dynamikk, men kan erodere middelklassen</h3>
+                    <p>At arbeidsplasser forsvinner med teknologiutvikling, er ikke nytt. Historisk ser vi at teknologiske 
+                        skifter har frigjort mennesker fra monotont, hardt og ofte farlig arbeid – og ny teknologi har skapt
+                         nye arbeidsplasser. Hvor mange hadde hørt om webdesigner i 1993?
+                        </p>
+                    <p>For 20 år siden var det få som så behov for smarttelefoner og apper. I det er det allemannseie. Mange 
+                        jobber vil forsvinne, og nye jobber vil komme til. Mange jobber vil også endre seg fundamentalt.
+                        </p>
+                    <p>Men hva skjer i samfunn hvor teknologi og kunstig intelligens utfordrer selve det å arbeide og behovet 
+                        for antall arbeidstagere?
+                        </p>
+                    <p>Verdensbanken viser at økt bruk av teknologi truer med å parkere Europas fattigste regioner og arbeidere
+                         med lav utdanning, noe som kan øke de økonomiske forskjellene. OECD skriver at opptil 10 prosent av jobbene 
+                         i vestlige land står i fare for å bli automatisert bort de nærmeste årene. Ut fra et moderat scenario fra
+                          McKinsey Global Institute, vil cirka 22 prosent av aktivitetene utført av arbeidstagere i dag, bli automatisert
+                           innen 2030.
+                        </p>
+                    <p>Arbeidsplasser forsvunnet med økt bruk av teknologi har vært knyttet til arbeiderklassen. Men ifølge OECD er
+                         hver sjette middelklassejobb i fare for å bli automatisert.
+                        </p>
+                    <p>I takt med økt digitalisering og mer bruk av kunstig intelligens (for eksempel ChatGPT) vil høykompetanse
+                         – og middelklasse-jobber bli utsatt. Det kan handle om jobber innen kontor, administrasjon, salg og 
+                         produksjonsarbeid. Men selv leger, ingeniører og jurister kan bli utkonkurrert.
+                        </p>
+                    <p>Mange i middelklassen kan oppleve sosial mobilitet nedover til mindre godt betalte 
+                        jobber i tjenestesektoren.
+                        </p>
+                    <p>Ifølge OECD er teknologisk innovasjon den største driveren i et mer polarisert arbeidsliv med større 
+                        ulikhet i inntekt og velstand. Mange mener denne polariseringen, mer enn jobbtap i seg selv, blir den
+                         store sosiale og politiske utfordringen i fremtidens arbeidsliv.
+                        </p>
+                    <p>Det er alvorlig at arbeiderklassen er under press, men det kan bli politisk svært krevende når middelklassen 
+                        begynner å målbære sin misnøye.
+                        </p>
+                </div>
+                <div class="paragraf4">
+                    <h3>Kan teknologi bidra til å undergrave moderne og åpne samfunn?</h3>
+                    <p>Ingen kan forutsi fremtiden, men det som er helt sikkert, er at teknologi og digitalisering vil 
+                        endre våre liv og våre samfunn. Kunstig intelligens og «Internett of things» er og vil bli 
+                        fundamentale endringsdrivere.
+                        </p>
+                    <p>De som styrer de digitale infrastrukturene av i morgen, vil bestemme mye over hver enkelt av oss 
+                        – enten direkte eller indirekte. Teknologibedrifter vil påvirke vår kultur, vår økonomi, vår 
+                        forståelse av verden og de offentlige debatter.
+                        </p>
+                    <p>Det er ikke gitt at mer internett og teknologi vil skape mer åpenhet og demokrati, kanskje det
+                         motsatte?
+                        </p>
+                    <p>Teknologi og økt spesialisering kan også skape manglende oversikt, fremmedfølelse og usikkerhet,
+                         som kan bygge opp under en pessimisme hvor mennesker føler seg maktesløse og prisgitt en «systemnødvendig» 
+                         utvikling som ingen kan gjøre noe med.
+                        </p>
+                    <p>Dermed kan blikket vendes bakover, mot tidligere tider da ting var enklere. Det er kanskje ikke tilfeldig at
+                         67 prosent av europeere er nostalgiske?
+                        </p>
+                    <p>Med en fremtid hvor teknologi vil gjøre kvantesprang og endringstakten eskalerer, vil det å sikre inkludering
+                         av de mange som vil føle de negative sidene av endringene, være en forutsetning for å sikre sosial, politisk 
+                         og demokratisk stabilitet.
+                        </p>
+                    <p>Hvis moderate partier ikke evner å balansere teknologiutviklingen, vil mer ytterliggående partier prøve, og 
+                        de vil ikke følge dagens «spilleregler».
+                    </p>
+                </div>
+           </div>
 
-
+        </article>
     </main>
-
 
 
     <footer>
