@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
 
+
 /* vår "minimal css reset" */
 * {
     margin: 0;
@@ -42,10 +43,7 @@ nav {
     top: 0;
     /* Pass på at navbaren ligger "over" annet innhold med z-index */
     z-index: 100;
-}
-
-nav {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-bottom: 2px darkblue;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -88,12 +86,47 @@ nav button {
     margin-top: 30px;
 }
 
-
-/* Slutt Navbar */
-
 .logo {
     height: 100px;
 }
+
+/* Slutt Navbar */
+
+
+
+
+/* Mørk/lys modus i navbar*/
+
+.mork main {
+    background-color: rgb(21, 29, 70);
+}
+.mork .containerGrid {
+    background-color: rgb(38, 43, 84);
+}
+.mork article {
+    background-color: rgb(53, 61, 100);
+    color: white;
+    box-shadow: 0px 4px 10px rgb(17, 17, 75);
+}
+.mork h2 {
+    color: lightgray;
+}
+.mork h4 {
+    color: black;
+}
+.mork .lesogsaa {
+    color: white;
+    box-shadow: 0px 2px 5px rgb(8, 8, 58);
+}
+.mork .bilde p {
+    color: lightgray;
+}
+.mork #art3kronikk {
+    background-color: rgb(21, 29, 70);
+}
+
+/* Slutt på mørk/lys modus i navbar*/
+
 
 
 
@@ -119,23 +152,18 @@ main {
     "box-5 box-6 box-6";
     width: 1300px;
     background-color: white;
-    margin: 0px auto;
-    
-    
+    margin: 0px auto; 
 }
 
 article {
     font-size: 30px;
     padding: 20px;
     box-shadow: 10px 10px 10px lightgray;
-    
 }
 
 
 
-
 /* genrell artikkel css*/
-
 
 .artNav {
     left: 0;
@@ -176,6 +204,7 @@ article {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 900;
     letter-spacing: -2px;
+    
 }
 
 h2 {
@@ -302,6 +331,10 @@ h3 {
     font-weight: 200;
 }
 
+.dropbtn, .knapp, .lesogsaa {
+    cursor: pointer;
+}
+
 /* Slutt genrell artikkel css*/
 
 
@@ -355,7 +388,17 @@ h4 {
 
 
 
+
+
+
 /* MEDIA: Så den passer forskjellige skjermstørrelser*/
+
+@media (max-width: 768px) {
+    .containerGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+}
 
 @media (max-width: 1120px) {
     h1 {
@@ -412,8 +455,6 @@ h4 {
     .artMain img {
         height: 50%;
     }
-
-    .lesogsaa img {}
 
     .tekst {
         font-size: 16px;
