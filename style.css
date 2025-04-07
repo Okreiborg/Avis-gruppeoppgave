@@ -94,7 +94,6 @@ nav button {
 
 
 
-
 /* Mørk/lys modus i navbar*/
 
 .mork main {
@@ -387,6 +386,31 @@ h4 {
 /* Slutt Kortversjon boks*/
 
 
+/* Reklame */
+.annonse-venstre,
+.annonse-hoyre {
+    position: fixed;
+    top: 200px; /* litt ned så de ikke overlapper navbaren */
+    width: 160px; /* vanlig bredde for skyskraper-annonser */
+    height: 100px;
+    z-index: 50;
+}
+
+.annonse-venstre {
+    left: 0;
+}
+
+.annonse-hoyre {
+    right: 0;
+}
+
+.annonse-venstre img,
+.annonse-hoyre img {
+    width: 100%;
+    height: auto;
+}
+
+/* Slutt reklame*/
 
 
 
