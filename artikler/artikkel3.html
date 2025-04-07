@@ -9,7 +9,49 @@
     <link rel="stylesheet" href="../style.css">
 
     <style>
+    .sammendrag-boks {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      background-color: #cfd7ee;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
 
+    .sammendrag-punkter {
+      padding-left: 20px;
+      font-size: 18px;
+      font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(49, 49, 49);
+      margin-bottom: 10px;
+    }
+    h4 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .ekstra-innhold {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .ekstra-innhold.vis {
+      display: block;
+    }
+
+    .knapp {
+      background: blue;
+      color: white;
+      border: 1px solid black;
+      border-radius: 30px;
+      padding: 10px;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 15px;
+      width: 100%;
+    }
        
 
     </style>
@@ -54,6 +96,31 @@
                     <p>Publisert: 25. mars 2023 - 10.04</p>
                 </div>
            </div>
+
+
+           <div class="sammendrag-boks">
+            <h4>Kortversjonen:</h4>
+            <ul class="sammendrag-punkter">
+              <li>Teknologi endrer liv og samfunn på dypere måter enn globalisering.</li>
+              <li>Økende polarisering og sårbarhet følger i kjølvannet av digitaliseringen.</li>
+              <li>Bruken av teknologi er ikke verdinøytral – den formes av politikk og makt.</li>
+            </ul>
+          
+            <div class="ekstra-innhold" id="ekstra" style="display: none;">
+              <ul class="sammendrag-punkter">
+                <li>Konvergerende teknologier fører til etiske og politiske utfordringer.</li>
+                <li>Middelklassen og høykompetanseyrker trues av automatisering.</li>
+                <li>Økonomisk ulikhet forsterkes, og arbeidslivet polariseres.</li>
+                <li>Teknologigiganter kan få makt over individ og demokratiske prosesser.</li>
+                <li>Digital fremmedgjøring og nostalgi øker i befolkningen.</li>
+                <li>Sosial inkludering må til for å hindre uro og ekstremisme.</li>
+              </ul>
+            </div>
+          
+            <button class="knapp" onclick="toggleSammendrag()">Les mer <i class="fa-solid fa-chevron-down"></i></button>
+          </div>
+          
+
            <div class="tekst">
                 <div class="ar3paragraf1">
                     <p>TARJEI SKIRBEKK, idéhistoriker og forfatter av «De moderate folkepartienes fall i Europa»</p>
