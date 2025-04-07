@@ -96,6 +96,7 @@ nav button {
 }
 
 
+
 /* Main */
 main {
     display: flex;
@@ -306,6 +307,9 @@ h3 {
 }
 
 
+
+/* Så den passer forskjellige skjermstørrelser*/
+
 @media (max-width: 1120px) {
     h1 {
         font-size: 45px;
@@ -393,6 +397,7 @@ h3 {
 }
 
 
+
 /* Footer */
 
 footer {
@@ -423,7 +428,6 @@ footer p {
   text-decoration: underline;
   color: blue;
 }
-
 
 /* Slutt Footer*/
 
