@@ -157,7 +157,11 @@ article {
     margin-top: 20px;
 }
 
-
+article:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+    transition: ease 0.3s;
+}
 
 /* genrell artikkel css*/
 
